@@ -1,0 +1,5 @@
+TotalVotesByState = 
+SUM('Elections'[Votes])
+
+VotePercentage = 
+DIVIDE([TotalVotesByState], CALCULATE([TotalVotesByState], ALL('Elections')), 0) * 100
